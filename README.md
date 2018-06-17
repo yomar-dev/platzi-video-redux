@@ -21,3 +21,8 @@ Es un **contenedor** del *estado predecible* para aplicaciones de JavaScript de 
 
 **Los cambios se realizan con funciones puras:** Los reduces son funciones puras que toman el estado anterior y una acción, y devuelven un nuevo estado. <br>
 
+
+### Instalar redux:
+
+`npm install --save redux`
+
