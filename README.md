@@ -59,3 +59,10 @@ const store = createStore(
 )
 ```
 
+
+<br><br><br>
+### Enlaces de interes:
+
+[Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) <br>
+[Redux DevTools Extension - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) <br>
+
