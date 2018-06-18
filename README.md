@@ -26,3 +26,36 @@ Es un **contenedor** del *estado predecible* para aplicaciones de JavaScript de 
 
 `npm install --save redux`
 
+
+
+### Entendiendo y agregando un Store
+Es la parte más importante de entender cuando estamos haciendo algo en Redux. <br><br>
+
+
+**Datos importantes del Store:** <br><br>
+
+- Contiene el estado de la aplicación.
+- Se puede acceder al estado con el método **getState()**
+- Se puede actualizar el estado con el método **dispatch(action)**
+- Escucha cambios con el método **subscribe(listener)**
+- Deja de escuchar cambios retornando la función del método **subscribe(listener)**
+
+
+El storage se importa de la siguiente forma: <br>
+```javascript
+import { createStore } from'redux'
+```
+
+**Reducer** => Función pura que retorna el próximo estado.<br>
+**PreloadState / InitialState** => Es el estado inicial de la aplicación, la primera carga, el llamado a una data. Puede ser cualquier tipo de dato.<br>
+**Enhancer** => Función que puede extender redux con capacidades añadidas por librerías externas. Es opcional. Eg. Añadir las dev-tools<br>
+
+Además, debemos crear una constante que será la que utilicemos en la aplicación.
+```javascript
+const store = createStore(
+  reducer,
+  initialState,
+  enhancer
+)
+```
+
