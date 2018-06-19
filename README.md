@@ -80,9 +80,12 @@ Que no deben hacer: <br>
 - Llamar a funciones no puras como Date.now(), Math.random().
 
 
+**Instalar React-Redux:** `npm install --save react-redux`
+
 <br><br><br>
 ### Enlaces de interes:
 
 [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) <br>
 [Redux DevTools Extension - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) <br>
+[React - Redux](https://github.com/reduxjs/react-redux) <br>
 
