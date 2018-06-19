@@ -66,6 +66,20 @@ const store = createStore(
 - Son objetos planos de JavaScript.
 
 
+### Reducer
+
+- Modifican nuestro estado.
+- Puede haber múltiples reducers en la aplicación y un solo store.
+- Devuelve el siguiente estado.
+
+
+Que no deben hacer: <br>
+
+- Modificar los argumentos recibidos.
+- Llamar a APIs (u otras tareas secundarias).
+- Llamar a funciones no puras como Date.now(), Math.random().
+
+
 <br><br><br>
 ### Enlaces de interes:
 
