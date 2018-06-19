@@ -59,6 +59,12 @@ const store = createStore(
 )
 ```
 
+**Action:** Bloque de información que envía datos a la aplicación.
+
+- Se envían usando el método **dispatch()** del store.
+- Son la única fuente de información del store.
+- Son objetos planos de JavaScript.
+
 
 <br><br><br>
 ### Enlaces de interes:
