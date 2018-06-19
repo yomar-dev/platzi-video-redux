@@ -49,6 +49,7 @@ function render(){
 	const $container = document.getElementById('playlist');
 	const playlist = store.getState();
 
+	$container.innerHTML = '';
 	playlist.forEach((item) => {
 	  const template = document.createElement('p');
 	  template.textContent = item.title;
