@@ -22,15 +22,15 @@ const store = createStore(
 
 console.log(store.getState());
 
-const homeContainer = document.getElementById('home-container')
+const homeContainer = document.getElementById('home-container');
 
 // ReactDOM.render(que voy a renderizar, donde lo haré);
 // const holaMundo = <h1>hola Estudiante!</h1>;
 //hydrate( <Home data={data} />, homeContainer);
 
-render(
+hydrate(
 	<Provider store={store}>
 		<Home />
 	</Provider>,
 	homeContainer
-)
+);

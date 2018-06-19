@@ -82,6 +82,15 @@ Que no deben hacer: <br>
 
 **Instalar React-Redux:** `npm install --save react-redux`
 
+
+Para conectar los datos del store con un componente se utiliza otra de las habilidades de react-redux con:
+`import { connect } from'react-redux'` <br>
+`export default connect(mapStateToProps)(Component)` <br>
+
+**mapStateToProps** es una función que devuelve las propiedades necesarias, los datos que el componente utilizará
+
+
+
 <br><br><br>
 ### Enlaces de interes:
 
