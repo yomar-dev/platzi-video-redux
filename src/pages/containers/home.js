@@ -9,54 +9,59 @@ import VideoPlayer from '../../player/containers/video-player';
 import { connect } from 'react-redux';
 
 class Home extends Component {
-  state = {
-    modalVisible: false,
-  }
-  handleOpenModal = (media) => {
-    this.setState({
-      modalVisible: true,
-      media
-    })
-  }
-  handleCloseModal = (event) => {
-    this.setState({
-      modalVisible: false,
-    })
-  }
-  render() {
-    return (
-      <HandleError>
-        <HomeLayout>
-          <Related />
-          <Categories
-            categories={this.props.categories}
-            handleOpenModal={this.handleOpenModal}
-            search={this.props.search}
-          />
-          {
-            this.state.modalVisible &&
-            <ModalContainer>
-              <Modal
-                handleClick={this.handleCloseModal}
-              >
-                <VideoPlayer
-                  autoplay
-                  src={this.state.media.src}
-                  title={this.state.media.title}
-                />
-              </Modal>
-            </ModalContainer>
-          }
-        </HomeLayout>
-      </HandleError>
+    state = {
+        modalVisible: false,
+    }
+    handleOpenModal = (media) => {
+        this.setState({
+            modalVisible: true,
+            media
+        })
+    }
+    handleCloseModal = (event) => {
+        this.setState({
+            modalVisible: false,
+        })
+    }
+    
+    render() {
+        return (
+        <HandleError>
+            <HomeLayout>
+            <Related />
+            <Categories
+                categories={this.props.categories}
+                handleOpenModal={this.handleOpenModal}
+                search={this.props.search}
+            />
+            {
+                this.state.modalVisible &&
+                <ModalContainer>
+                    <Modal
+                        handleClick={this.handleCloseModal}
+                    >
+                    <VideoPlayer
+                        autoplay
+                        src={this.state.media.src}
+                        title={this.state.media.title}
+                    />
+                    </Modal>
+                </ModalContainer>
+            }
+            </HomeLayout>
+        </HandleError>
     )
   }
 }
 
 function mapStateToProps(state, props){
+    const categories = state.data.categories.map((categoryId) => {
+        return state.data.entities.categories[categoryId]
+    })
+    
     return {
-         categories: state.data.categories,
-         search: state.search
+        categories: categories,
+        search: state.search
     }
 }
 
