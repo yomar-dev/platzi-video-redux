@@ -11,6 +11,7 @@ function Categories(props) {
       {
         props.search.map((item) => {
             return <Media
+                      openModal={props.handleOpenModal}
                       title  = {item.get('title')}
                       author = {item.get('author')}
                       type   = {item.get('type')}
@@ -36,4 +37,4 @@ function Categories(props) {
   )
 }
 
-export default Categories
+export default Categories;
