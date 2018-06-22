@@ -8,20 +8,25 @@ import Home from '../pages/containers/home';
 import data from '../schemas/index';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from '../reducers/data';
+import reducer from '../reducers/index';
 
-const initialState = {
+/*const initialState = {
 	data: {
 		//...data
 		entities: data.entities,
-		categories: data.result.categories
+		categories: data.result.categories,
+		search: []
 	},
-	search: []
-}
+	modal: {
+		visibility: false,
+		mediaId: null
+	}
+	
+}*/
 
 const store = createStore(
 	reducer,
-	initialState,
+	{ },
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //Enhancer
 )
 
