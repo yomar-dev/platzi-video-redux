@@ -87,7 +87,9 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 `import { connect } from'react-redux'` <br>
 `export default connect(mapStateToProps)(Component)` <br>
 
-**mapStateToProps** es una función que devuelve las propiedades necesarias, los datos que el componente utilizará
+**mapStateToProps** es una función que devuelve las propiedades necesarias, los datos que el componente utilizará. <br>
+
+**Instalar Normalizr:** `npm install --save normalizr` <br>
 
 
 
@@ -97,4 +99,5 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) <br>
 [Redux DevTools Extension - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) <br>
 [React - Redux](https://github.com/reduxjs/react-redux) <br>
+[Normalizr](https://github.com/paularmstrong/normalizr) <br>
 
