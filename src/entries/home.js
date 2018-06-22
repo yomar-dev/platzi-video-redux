@@ -5,9 +5,12 @@ import Home from '../pages/containers/home';
 import data from '../api.json';
 // console.log('Hola mundo!' )
 
+import normalizedData from '../schemas/index';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from '../reducers/data';
+
+console.log(normalizedData);
 
 const initialState = {
 	data: {
