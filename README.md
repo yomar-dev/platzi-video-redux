@@ -91,6 +91,7 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 
 **Instalar Normalizr:** `npm install --save normalizr` <br>
 
+**Instalar librerias para usar datos inmutables:** `npm install immutable redux-immutable --save` <br>
 
 
 <br><br><br>
