@@ -94,6 +94,11 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 **Instalar librerias para usar datos inmutables:** `npm install immutable redux-immutable --save` <br>
 
 
+**Middlewares:** Es una forma de poder interceptar lo que está sucediendo con (redux) para mejorarlo y/o modificarlo. <br>
+
+**Componentes del Middleware:** Recibe el dispatch y el getState como argumentos y retorna una función, esta función recibe el método para despachar el siguiente middleware; se espera que retorne una función que recibe action y llame a next(action). <br>
+
+
 <br><br><br>
 ### Enlaces de interes:
 
