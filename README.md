@@ -98,6 +98,9 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 
 **Componentes del Middleware:** Recibe el dispatch y el getState como argumentos y retorna una función, esta función recibe el método para despachar el siguiente middleware; se espera que retorne una función que recibe action y llame a next(action). <br>
 
+**Instalar Redux Logger:** `npm install --save redux-logger` <br>
+**Instalar Redux DevTools Extension:** `npm install -save-dev redux-devtools-extension` <br>
+
 
 <br><br><br>
 ### Enlaces de interes:
@@ -106,4 +109,5 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 [Redux DevTools Extension - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) <br>
 [React - Redux](https://github.com/reduxjs/react-redux) <br>
 [Normalizr](https://github.com/paularmstrong/normalizr) <br>
+[Awesome Redux](https://github.com/xgrommx/awesome-redux) <br>
 
