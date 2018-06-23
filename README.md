@@ -100,6 +100,7 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 
 **Instalar Redux Logger:** `npm install --save redux-logger` <br>
 **Instalar Redux DevTools Extension:** `npm install -save-dev redux-devtools-extension` <br>
+**Acciones asíncronas:** `npm install --save redux-thunk` <br>
 
 
 <br><br><br>
@@ -110,4 +111,5 @@ Para conectar los datos del store con un componente se utiliza otra de las habil
 [React - Redux](https://github.com/reduxjs/react-redux) <br>
 [Normalizr](https://github.com/paularmstrong/normalizr) <br>
 [Awesome Redux](https://github.com/xgrommx/awesome-redux) <br>
+[Redux Thunk](https://github.com/reduxjs/redux-thunk) <br>
 
