@@ -7,7 +7,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducer from '../reducers/index';
 import { Map as map } from 'immutable';
 
-function logger({ getState, dispatch }){
+/*function logger({ getState, dispatch }){
 	return (next) => {
 		return (action) => {
 			console.log('Estado antigüo: ', getState().toJS())
@@ -17,6 +17,14 @@ function logger({ getState, dispatch }){
 			return value
 		}
 	}
+}*/
+
+const logger = ({getState, dispatch}) => next => action => {
+	console.log('Estado antigüo: ', getState().toJS())
+	console.log('Enviando la siguiente acción: ', action);
+	const value = next(action)
+	console.log('Nuevo estado: ', getState().toJS())
+	return value
 }
 
 const store = createStore(
